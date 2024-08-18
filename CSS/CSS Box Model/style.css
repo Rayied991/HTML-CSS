@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: aqua;
+}
+/* calculate height and width
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+.box1{
+    color: yellow;
+    padding: 10px;
+    margin: 35px;
+    /* background-color:  wil be in 
+    padding are not in margin area */
+    border: 2px solid blue;
+    height: 200px;/*naturally not included any border or padding only include the element */
+    box-sizing: border-box;
+    /* when i give
+    box-sizing=border box->[changes height definition]
+    border +padding =200px */
+
+    /* when we give height/width &
+    box-sizing -> we don't include 
+    margin */
+}
+
+/* margin collapse->
+if 2 elements margin overlap
+include maximum margin one time */
+.box2{
+    color: red;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 200px;
+}
