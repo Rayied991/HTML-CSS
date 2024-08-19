@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1  class="yellow cred cPurple" data-x="a">CSS Specificity</h1>
+    </div>
+    
+</body>
+</html>
+<!-- order of specificity is:
+
+!important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+
+<!-- Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+!important:10,000 -->
