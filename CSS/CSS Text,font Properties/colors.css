@@ -1,0 +1,24 @@
+h1{
+    /* color keyword  */
+    /* color: orange; */
+    /* hex color  */
+    /* color: #0BEE0B; */
+
+    /* rgb color  */
+    /* color: rgb(55, 221, 83); */
+
+    /* rgba color a=al[ha/opacity - default is =1 */
+    /* color: rgba(45, 7, 4, 0.175); */
+
+    /* hsl color->Hue,Saturation & Lightness
+    H-type of color
+    S-the integrity/purity
+    L-how light/dark  */
+    color: hsl(235, 100%, 50%);
+
+    /* hsla color  */
+    /* color: hsla(235, 100%, 50%,0.175); */
+
+    background-color: rgba(45, 7, 4, 0.175);;
+
+}
