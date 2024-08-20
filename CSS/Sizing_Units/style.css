@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 12px;
+}
+.box{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1920px; */
+    width: 80vw;
+    height: 10vh;
+    margin: auto;/*div centered which work on block level element
+    not on inline element */
+    background-color: aquamarine;
+}
+.container{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1920px; */
+    width: 80vw;
+    /* height: 80vh; */
+    min-height: 80vh;
+    font-size: 18px;
+    margin: 23px auto;/* top-bottom , left-right */
+    background-color: aquamarine;
+}
+
+.container > div{
+    
+    /* font-size: 2em; */
+    font-size: 2rem;
+    border: 2px solid red;
+    width: 50%;
+}
+
+.container > div > div{
+    border: 2px solid blue;
+    width: 50%;
+}
+.mycont{
+    /* background-color: red; */
+    box-sizing: border-box;
+    margin: 23px auto;
+    border: 2px solid black;
+    color: black;
+    font-size: 22px;
+    /* width: 100vmin; */
+    width: 80vw;
+    /* for pc->100vmin =100vh ; mobile=100vmin=100vh */
+}
+
+.box2{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1920px; */
+    width: 80vw;
+    margin: auto;
+    background-color: aquamarine;
+}
