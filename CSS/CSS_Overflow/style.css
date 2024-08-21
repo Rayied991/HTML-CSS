@@ -1,0 +1,26 @@
+.box{
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid black;
+
+    /*fix overflow 2 ways
+    */
+    /* way-1  */
+    /* overflow: scroll; */
+    /* overflow: hidden; */
+    /* overflow clip and hidden almost same
+    clip- cannot add scrollbar programmatically */
+    /* overflow: clip; */
+    /* overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll ;->
+    shortend form below */
+
+    overflow: auto hidden;/* x,y */
+
+    /* if overflow occur->scrollbar
+    else not shown */
+    /*whitespace -nowrap -> all in one row */
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+}
