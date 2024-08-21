@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box {
+    border: 2px solid blue;
+    /* display: inline;
+    width: 344px;
+    padding: 45px;
+    margin: 34px; */
+    /* if inline element then padding-top and margin-top not acceptable
+    for padding and margin in inline element
+    in inline element-> we cannot set width
+    to fix this-> we can use inline block element
+    
+    */
+    display: inline-block;
+    width: 344px;
+    padding: 45px;
+    margin: 34px;
+
+}
+
+.box1{
+    /* display: none; removed and also space removed */
+    visibility: hidden;/* here space is intacked and only element is
+    hidden */
+}
