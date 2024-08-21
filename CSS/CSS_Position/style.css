@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 533px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+    border: 2px solid black;
+}
+
+/* static position->
+do not add top,bottom,left and right */
+.box1 {
+    background-color: aqua;
+
+    /* sticked in top it won't move by scrolling */
+    /* position: sticky;
+    top: 0px;
+    height: 111px;
+    width: 100%;
+    margin: 0;
+    padding: 0; */
+
+
+    /* position: relative; */
+    /* to use z-index we need to change position then we can use z-index */
+    /* z-index: 1; */
+    /* value  cannot be 0 */
+    position: absolute;
+    /* look for nearest position element */
+    /* it will find its parent(nearest positioned ancestor) if current parent don't has position then find all the parent until found position if none found then it will attached to root and position will be set */
+    top: 0px;
+    left: 3px;
+
+}
+
+.box2 {
+    background-color: azure;
+    /* position: relative;
+    top: 34px;
+    left: 56px; */
+}
+
+.box3 {
+    background-color: antiquewhite;
+    /* position: fixed; */
+    /* if i scroll it won't move from its area */
+    /* bottom: 0px;
+    left: 8vw;
+    height: 111px;  */
+}
+
+.box4 {
+    background-color: purple;
+}
+
+.parent {
+    padding: 43px;
+    margin: 34px;
+    border: 2px solid purple;
+    
+    /* As an exception->transform,filter or perspective properties
+    can also make an element appear as positioned
+    */
+    /* position: relative; */
+    /* transform: translate(0); */
+    /* filter: invert(0); */
+    /* perspective: 0em; */
+    /* these 3 properties also can be appeared/positioned as parent  */
+
+}
