@@ -1,0 +1,118 @@
+.container {
+    border: 2px solid red;
+    display: flex;
+    height: 80vh;
+    /* center  */
+    /* justify-content: center;
+    align-items: center; */
+    /* flex start  */
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+
+    /* flex-end  */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+
+    /* right   */
+    /* justify-content: right;
+    align-items: right; */
+
+    /* left  */
+    /* justify-content: left;
+    align-items: left; */
+
+    /* space around   */
+    /* justify-content: space-around;
+    align-items: center; */
+
+    /* space between   */
+    /* justify-content: space-between;
+    align-items: center; */
+
+    /* Space evenly  */
+    /* justify-content: space-evenly; */
+    align-items: center;
+
+
+    /* flex-direction by default left to right   */
+    /* top to bottom  */
+    /* flex-direction: column; */
+
+    /* bottom to top  */
+    /* flex-direction: column-reverse;
+    
+    */
+
+    /* row - default  */
+    /* flex-direction: row; */
+    /* row-reverse; */
+    /* flex-direction: row-reverse; */
+
+
+    /* wrap - for overflow */
+    flex-wrap: wrap;
+
+    /* nowrap->default  */
+    /* wrap-reverse-> wrap-reverse  */
+
+    /* only 1 line->use align-items: ;
+    >1 line-> align-content  */
+
+    /* align-content: flex-start; */
+
+
+    /* flex-flow -> flex-direction and flex-wrap */
+    flex-flow: row wrap;
+    /* flex-direction: column; */
+
+    /* gap  */
+    /* gap: 30px; */
+    /* different gap values */
+    /* row-gap: 40px;
+    column-gap: 10px; */
+
+    /* gap in rows and columns  -> gap: row-gap column-gap */
+    gap: 40px 10px ;
+}
+
+.item {
+    /* by default flex-grow 0  */
+    /* flex-grow-> it will take equal space for all */
+    flex-grow: 1;
+    height: 92px;
+    width: 92px;
+    border: 2px solid black;
+    /* margin: 4px; */
+    background-color: blueviolet;
+    color: white;
+
+   
+
+}
+/* less order-> come :first
+more order-> come :last */
+
+ /* order - default order=0 */
+ .order-1{
+    order: 1;
+ }
+ .order-2{
+    order: 2;
+ }
+ .order-3{
+    order: 3;
+ }
+ .item1{
+    /* take 2 items space  */
+    flex-grow: 2;
+ }
+
+ .item2{
+    /* double speed to shrink  */
+    flex-shrink: 2;
+ }
+
+ .item3{
+    /* remove align-content  */
+    align-self: flex-end;
+ }
