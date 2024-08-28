@@ -1,0 +1,26 @@
+img{
+    /* float left and allow content to right side  */
+    float: right;
+}
+
+.cards{
+    border: 2px solid black;
+    display: flow-root; /* solve overflow problem */
+
+}
+
+.card{
+    border: 2px solid red;
+}
+/* clear-> if i want lke->
+i don;t want any content to float in my right side */
+
+.card:nth-child(3){
+    background-color: aqua;
+    /* clear: left,right,both    */
+    clear: both;
+     /* right and left not allowed */
+}
+
+
+/* don't use float and clear  */

@@ -1,0 +1,53 @@
+.box:first-child{
+    background-color: red;
+}
+/* 
+.box::first-line{
+    color: yellow;
+} */
+
+/* .boxes *{
+    color: blue;
+    border: 2px  solid black;
+}
+
+p,a,.box,[data-color="primary"]{
+    padding-top: 45px;
+} */
+
+/* .box:nth-child(odd){
+    background-color: blue;
+} */
+
+/*top from last */
+/* .box:nth-last-child(1){
+    background-color: purple;
+} */
+
+ /* before-> adds before main content
+ after-> adds after main content
+  */
+.boxes::before{
+    content: "hello";
+    color: blue;
+}
+.boxes::after{
+    content: "after some hello";
+    color: red;
+}
+
+/* ::selection */
+
+::selection{
+    background-color: black;
+    color: aqua;
+}
+
+.box::first-letter{
+    color: peru;
+    font-size: 45px;
+}
+
+input::placeholder{
+    color: blue;
+}
