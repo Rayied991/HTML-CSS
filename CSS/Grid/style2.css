@@ -1,0 +1,43 @@
+/* way02 of grid  */
+
+.container{
+    border: 2px solid  black;
+    display: grid;
+
+    grid-template-areas: "nav nav nav"
+                         "Side article article"
+                         "footer footer footer";
+
+    
+}
+
+.item{
+
+    border: 2px solid red;
+    height: 55px;
+    
+}
+
+.item-1{
+    grid-area: nav;
+    background-color: aqua;
+    
+}
+.item-2{
+    /* grid-area: side; */
+    background-color: beige;
+    
+}
+.item-3{
+    grid-area: article;
+    background-color: azure;
+    
+}
+.item-4{
+    grid-area: footer;
+    /* background-color: blueviolet; */
+}
+.item-5{
+    grid-area: nav;
+    /* background-color: blueviolet; */
+}
